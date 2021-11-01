@@ -40,8 +40,10 @@ const ListVegetables = () => {
 
     return (
         <>
-            {vegetables ? vegetables.map((item) => <div>{item.name}</div>) : null}
+            <div className="ContentWrapper">
 
+                {vegetables ? vegetables.map((item) => <div className="item">{item.name}</div>) : null}
+            </div>
             <div className="requestVegetable">
                 <form onSubmit={handleSubmit}>
                     <label >
